@@ -30,14 +30,14 @@ patches:
   patch: |-
     - op: replace
       path: /spec/commonName
-      value: wordpress.sgrhas.io
+      value: wordpress.trvcloud.com
     - op: replace
       path: /spec/dnsNames/0
-      value: wordpress.sgrhas.io
+      value: wordpress.trvcloud.com
 - target:
     kind: HTTPProxy
     name: wordpress
   patch: |-
     - op: replace
       path: /spec/virtualhost/fqdn
-      value: wordpress.sgrhas.io
+      value: wordpress.trvcloud.com
